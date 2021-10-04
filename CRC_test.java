@@ -41,6 +41,9 @@ class CRC
             {
                 if(msb==0)
                     r[j]=xor(r[j],z[k]);
+                else
+                    r[j]=xor(r[j],g[k]);
+                    k++;
             }
             r[m+i]=d[m+i];
         }
